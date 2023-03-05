@@ -1,0 +1,31 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link href="/products/static/vendor/css/index.css" rel="stylesheet">
+{% endblock %}
+
+{% block pagecontent %}
+    <!-- Page Content -->
+<section>
+    <!--    <div class="alert alert-light text-center" role="alert">-->
+    <!--        Информационное сообщение-->
+    <!--    </div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="mt-5">Store</h1>
+                <p>
+                    New images and best brands on the Store.
+                    Free shipping worldwide! Outlet: up to -70% Own Brand. -20% to new buyers.
+                </p>
+                <button id="start-purchase-btn" type="button" class="btn btn-lg">
+                    <a id="start-purchase-link" href="{% url 'products' %}">
+                        Begin shopping
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
